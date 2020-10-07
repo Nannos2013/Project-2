@@ -1,0 +1,34 @@
+nannos2013@kali:~$ pwd
+/home/nannos2013
+nannos2013@kali:~$ cd /
+nannos2013@kali:/$ pwd
+/
+nannos2013@kali:/$ cd home/
+nannos2013@kali:/home$ pwd
+/home
+nannos2013@kali:/home$ cd ..
+nannos2013@kali:/$ pwd
+/
+nannos2013@kali:/$ ls
+bin   home            lib32       media  root  sys  vmlinuz
+boot  initrd.img      lib64       mnt    run   tmp  vmlinuz.old
+dev   initrd.img.old  libx32      opt    sbin  usr
+etc   lib             lost+found  proc   srv   var
+nannos2013@kali:/$ cd /etc/
+nannos2013@kali:/etc$ cd ../home/nannos2013/
+nannos2013@kali:~$ pwd
+/home/nannos2013
+nannos2013@kali:~$ cd -
+/etc
+nannos2013@kali:/etc$ pwd
+/etc
+nannos2013@kali:/etc$ cd -
+/home/nannos2013
+nannos2013@kali:~$ pwd
+/home/nannos2013
+nannos2013@kali:~$ cd ../../
+nannos2013@kali:/$ cd
+nannos2013@kali:~$ pwd
+/home/nannos2013
+nannos2013@kali:~$ cd
+
