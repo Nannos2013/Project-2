@@ -1,0 +1,25 @@
+nannos2013@kali:~$ ls
+0_xvz    Documents  function.sh     items.txt  Pictures  Templates
+date.sh  Downloads  hello-world     Music      Public    Videos
+Desktop  file1.txt  hello-world.sh  param.sh   task.sh
+nannos2013@kali:~$ ls -l
+total 68
+-rwxr-xr-x 1 nannos2013 nannos2013   19 Oct  7 06:15 0_xvz
+-rwxr-xr-x 1 nannos2013 nannos2013   18 Oct  7 06:20 date.sh
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Desktop
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Documents
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Downloads
+-rw-r--r-- 1 nannos2013 nannos2013  167 Oct  6 22:19 file1.txt
+-rwxr-xr-x 1 nannos2013 nannos2013  126 Oct  6 22:26 function.sh
+-rw-r--r-- 1 nannos2013 nannos2013   77 Oct  4 20:00 hello-world
+-rwxr-xr-x 1 nannos2013 nannos2013   32 Oct  7 06:28 hello-world.sh
+-rw-r--r-- 1 nannos2013 nannos2013   25 Oct  6 22:42 items.txt
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Music
+-rwxr-xr-x 1 nannos2013 nannos2013   44 Oct  6 22:38 param.sh
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Pictures
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Public
+-rwxr-xr-x 1 nannos2013 nannos2013   29 Oct  7 06:12 task.sh
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Templates
+drwxr-xr-x 2 nannos2013 nannos2013 4096 Sep 11 17:05 Videos
+nannos2013@kali:~$ ls -l hello-world.sh
+-rwxr-xr-x 1 nannos2013 nannos2013 32 Oct  7 06:28 hello-world.sh
