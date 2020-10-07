@@ -1,0 +1,11 @@
+nannos2013@kali:~$ vi function.sh
+nannos2013@kali:~$ chmod +x function.sh
+nannos2013@kali:~$ ./function.sh
+User Name: nannos2013
+Home Directory: 
+nannos2013@kali:~$ vi function.sh
+nannos2013@kali:~$ ./function.sh
+User Name: nannos2013
+Home Directory: 
+User Name: nannos2013
+Home Directory: 
