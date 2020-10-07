@@ -1,0 +1,8 @@
+nannos2013@kali:~$ file hello-world.sh
+hello-world.sh: Bourne-Again shell script, ASCII text executable
+nannos2013@kali:~$ cp hello-world.sh 0_xvz
+nannos2013@kali:~$ file 0_xvz
+0_xvz: Bourne-Again shell script, ASCII text executable
+nannos2013@kali:~$ vi 0_xvz
+nannos2013@kali:~$ file 0_xvz
+0_xvz: ASCII text
