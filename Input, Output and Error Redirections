@@ -1,0 +1,6 @@
+nannos2013@kali:~$ ls -l foobar
+ls: cannot access 'foobar': No such file or directory
+nannos2013@kali:~$ touch foobar
+nannos2013@kali:~$ ls -l foobar
+-rw-r--r-- 1 nannos2013 nannos2013 0 Oct  7 06:44 foobar
+nannos2013@kali:~$ 
