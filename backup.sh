@@ -1,8 +1,42 @@
-nannos2013@kali:~$ vi backup.sh
-nannos2013@kali:~$ chmod +x backup.sh
-nannos2013@kali:~$ ./backup.sh
-FIles to be included:70
-Directories to be included:69
-Backup of /home/nannos2013 completed!
-Details about the output backup file:
--rw-r--r-- 1 nannos2013 nannos2013 1224425 Oct  7 18:05 /tmp/nannos2013_home_2020-10-07_180501.tar.gz
+#!/bin/bash
+
+user=$(whoami)
+input=/home/$user
+output=/tmp/${user}_home_$(date +%Y-%m-%d_%H%M%S).tar.gz
+
+function total_files {
+        find $1 -type f | wc -l
+}
+
+function total_directories {
+        find $1 -type d | wc -l
+}
+
+function total_archived_directories {
+        tar -tzf $1 | grep  /$ | wc -l
+}
+
+function total_archived_files {
+        tar -tzf $1 | grep -v /$ | wc -l
+}
+
+tar -czf $output $input 2> /dev/null
+
+src_files=$( total_files $input )
+src_directories=$( total_directories $input )
+
+arch_files=$( total_archived_files $output )
+arch_directories=$( total_archived_directories $output )
+
+echo "Files to be included: $src_files"
+echo "Directories to be included: $src_directories"
+echo "Files archived: $arch_files"
+echo "Directories archived: $arch_directories"
+
+if [ $src_files -eq $arch_files ]; then
+        echo "Backup of $input completed!"
+        echo "Details about the output backup file:"
+        ls -l $output
+else
+        echo "Backup of $input failed!"
+fi
