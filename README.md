@@ -1,6 +1,18 @@
 I followed the steps in the tutorial and worked on these files:
 
-
+0_xyz
+backup.sh
+comparision.sh
+date.sh
+file1.txt
+for-loop.sh
+hello-world.sh
+if_else.sh
+param.sh
+task.sh
+until-loop.sh
+welcome.sh
+while-loop.sh
 
 
 
